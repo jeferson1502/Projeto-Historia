@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'bebas';
+    src: url(fontes/BebasNeue-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'pirata';
+    src: url(fontes/PirataOne-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'lion';
+    src: url(fontes/lion_king.ttf) format(truetype);
+}
+
+:root{
+    --header: #522500;
+    --interativo: rgba(0, 0, 0, 0.274);
+}
+
+*{
+    margin: 0px;
+}
+
+header{
+    background-color: var(--header);
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.349)
+}
+
+header h1{
+    color: white;
+    font-family: 'pirata';
+    text-transform: initial;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    font-size: 3em;
+    margin-top: 15px;
+    margin-left: 50px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+nav{
+    text-align: right;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'pirata';
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px black;
+}
+
+article{
+    margin-left: 60px;
+    text-align: justify;
+}
+
+.principal{
+    text-align: center;
+}
+
+
+article h2, h3, h4{
+    font-family: 'pirata';
+    margin: 5px 0px 10px 0px;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 2em;
+    text-indent: 25px;
+}
+
+h4{
+    font-size: 2em;
+    font-weight: normal;
+    text-indent: 25px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-indent: 30px;
+    max-width: 800px;
+}
