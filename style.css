@@ -15,20 +15,22 @@
     src: url(fontes/lion_king.ttf) format(truetype);
 }
 
-:root{
-    --header: #522500;
-    --interativo: rgba(0, 0, 0, 0.274);
-}
-
 *{
     margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+    --header: #522500;
+    --interativo: rgba(0, 0, 0, 0.534);
 }
 
 header{
     background-color: var(--header);
     color: white;
     padding: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.349)
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.349);
 }
 
 header h1{
@@ -60,34 +62,122 @@ a{
     text-shadow: 2px 2px 2px black;
 }
 
+a:hover{
+    font-size: 120%;
+    background-color: var(--interativo);
+    border-radius: 5px;
+    transition-duration: .25s;
+}
+
 article{
-    margin-left: 60px;
     text-align: justify;
+}
+
+main{
+    line-height: 50px;
 }
 
 .principal{
     text-align: center;
 }
 
-
-article h2, h3, h4{
-    font-family: 'pirata';
-    margin: 5px 0px 10px 0px;
+#ph{
+    height: 70vh;
+    background: white url(imagens/imagens\ low/pre-historia-low.jpg) bottom center fixed;
+    background-size: cover;
+    width: 98.5vw;
 }
 
+#ia{
+    height: 70vh;
+    background: white url(imagens/imagens\ low/idade-antiga-low.jpg) bottom center fixed;
+    background-size: cover;
+    width: 98.5vw;
+}
+
+#im{
+    height: 70vh;
+    background: white url(imagens/imagens\ low/idade-media-low.jpg) top center fixed;
+    background-size: cover;
+    width: 98.5vw;
+}
+
+#r{
+    height: 80vh;
+    background: white url(imagens/imagens\ low/renascimento.jpeg) left center fixed;
+    background-size: cover;
+    width: 98.5vw;
+}
+
+#mo{
+    height: 80vh;
+    background: white url(imagens/imagens\ low/idade-moderna.jpg) right center fixed;
+    background-size: cover;
+    width: 98.5vw;
+}
+
+#ic{
+    height: 80vh;
+    background: white url(imagens/imagens\ low/idade-contemporanea.jpg) right center fixed;
+    background-size: cover;
+    width: 98.5vw;
+}
+
+.img-container{
+    box-shadow: inset 5px 2px 100px 0px rgba(0, 0, 0, 0.692);
+}
+
+.img-container h2{
+    background-color: rgba(0, 0, 0, 0.76);
+    display: inline-block;
+    padding: 30px;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    font-size: 4em;
+    font-family: 'pirata';
+    position: relative;
+}
+
+.conteudo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 h2{
-    font-size: 2.5em;
+    font-size: 3em;
+    font-family: 'pirata';
+    color: rgb(253, 253, 253);
+    background-color: #522500cb;
+    text-shadow: 2px 2px 4px black;
+    border-radius: 15px;
+    letter-spacing: 3px;
+    padding: 15px;
+    margin: 50px;
 }
 
 h3{
-    font-size: 2em;
+    font-size: 2.5em;
     text-indent: 25px;
+    font-family: 'pirata';
+    font-weight: lighter;
+    margin: 30px 80px 30px 10px;
+    text-decoration: underline;
+}
+
+h3::before{
+    content: '▪️\00A0';
 }
 
 h4{
     font-size: 2em;
+    font-family: 'pirata';
     font-weight: normal;
     text-indent: 25px;
+    margin-right: 80px;
+    text-decoration: underline;
 }
 
 p{
@@ -95,4 +185,7 @@ p{
     font-size: 1.5em;
     text-indent: 30px;
     max-width: 800px;
+    margin-left: 30px;
+    margin-right: 80px;
+    padding-bottom: 25px;
 }
