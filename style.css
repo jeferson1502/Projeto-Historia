@@ -82,45 +82,33 @@ main{
 }
 
 #ph{
-    height: 70vh;
     background: white url(imagens/imagens\ low/pre-historia-low.jpg) bottom center fixed;
-    background-size: cover;
-    width: 98.5vw;
 }
 
 #ia{
-    height: 70vh;
     background: white url(imagens/imagens\ low/idade-antiga-low.jpg) bottom center fixed;
-    background-size: cover;
-    width: 98.5vw;
 }
 
 #im{
-    height: 70vh;
-    background: white url(imagens/imagens\ low/idade-media-low.jpg) top center fixed;
-    background-size: cover;
-    width: 98.5vw;
+    background: white url(imagens/imagens\ low/idade-media-low.jpg) left center fixed;
 }
 
 #r{
-    height: 80vh;
     background: white url(imagens/imagens\ low/renascimento.jpeg) left center fixed;
-    background-size: cover;
-    width: 98.5vw;
 }
 
 #mo{
-    height: 80vh;
     background: white url(imagens/imagens\ low/idade-moderna.jpg) right center fixed;
-    background-size: cover;
-    width: 98.5vw;
 }
 
 #ic{
-    height: 80vh;
     background: white url(imagens/imagens\ low/idade-contemporanea.jpg) right center fixed;
+}
+
+#ic, #mo, #r, #im, #ph, #ia{
+    height: 80vh;
     background-size: cover;
-    width: 98.5vw;
+    width: 96.5vw;
 }
 
 .img-container{
@@ -130,18 +118,19 @@ main{
 .img-container h2{
     background-color: rgba(0, 0, 0, 0.76);
     display: inline-block;
-    padding: 30px;
+    padding: 4vw;
     color: white;
     text-shadow: 2px 2px 0px black;
-    font-size: 4em;
+    font-size: 9vw;
     font-family: 'pirata';
     position: relative;
 }
 
 .conteudo{
+    font-size: 4.5vw;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top:40%;
+    left: 48%;
     transform: translate(-50%, -50%);
 }
 
